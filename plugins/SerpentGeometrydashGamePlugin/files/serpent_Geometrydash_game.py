@@ -25,6 +25,8 @@ class SerpentGeometrydashGame(Game, metaclass=Singleton):
         self.api_class = GeometrydashAPI
         self.api_instance = None
 
+        self.frame_transformation_pipeline_string = "RESIZE:200x200|FLOAT"
+
     @property
     def screen_regions(self):
         regions = {
