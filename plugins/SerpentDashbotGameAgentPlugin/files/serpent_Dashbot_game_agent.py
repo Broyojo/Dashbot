@@ -22,6 +22,6 @@ class SerpentDashbotGameAgent(GameAgent):
                 str(i)
             )
 
-        #pressing the space bat
+        #pressing the space bar
         self.input_controller.tap_key(KeyboardKey.KEY_SPACE)        
         print("Jumped")
