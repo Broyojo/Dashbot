@@ -1,5 +1,8 @@
 from serpent.game_agent import GameAgent
 from serpent.input_controller import KeyboardKey
+import random
+import numpy
+import keras
 
 class SerpentDashbotGameAgent(GameAgent):
 
@@ -11,7 +14,8 @@ class SerpentDashbotGameAgent(GameAgent):
         self.frame_handler_setups["PLAY"] = self.setup_play
 
     def setup_play(self):
-        pass
+        input_dim = frame.shape #input dimension of neural network
+        layers = random.randint(1,3) #number of hidden layers
     
     def handle_play(self, game_frame):
         #visual debugger
@@ -23,5 +27,5 @@ class SerpentDashbotGameAgent(GameAgent):
             )
 
         #pressing the space bar
-        self.input_controller.tap_key(KeyboardKey.KEY_SPACE)        
+        self.input_controller.tap_key(KeyboardKey.KEY_SPACE, duration=0.05)        
         print("Jumped!")
