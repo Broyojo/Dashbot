@@ -14,7 +14,7 @@ class SerpentDashbotGameAgent(GameAgent):
         self.frame_handler_setups["PLAY"] = self.setup_play
 
     def setup_play(self):
-        input_dim = frame.shape #input dimension of neural network
+        input_dim = game_frame.shape #input dimension of neural network
         layers = random.randint(1,3) #number of hidden layers
     
     def handle_play(self, game_frame):
