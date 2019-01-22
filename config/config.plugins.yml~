@@ -1,4 +1,4 @@
 SerpentDashbotGameAgentPlugin:
   frame_handler: PLAY
 SerpentGeometrydashGamePlugin:
-  fps: 15
+  fps: 2

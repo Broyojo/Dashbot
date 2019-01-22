@@ -12,7 +12,7 @@ class SerpentGeometrydashGamePlugin(offshoot.Plugin):
     ]
 
     config = {
-        "fps": 30
+        "fps": 60
     }
 
     @classmethod

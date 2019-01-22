@@ -14,7 +14,6 @@ class SerpentDashbotGameAgent(GameAgent):
 
     def setup_play(self):
         pass
-    
     def handle_play(self, game_frame):
         #visual debugger
         for i, game_frame in enumerate(self.game_frame_buffer.frames):
@@ -25,5 +24,4 @@ class SerpentDashbotGameAgent(GameAgent):
             )
 
         #pressing the space bar
-        self.input_controller.tap_key(KeyboardKey.KEY_SPACE, duration=0.05)        
-        print("Jumped!")
+        self.input_controller.tap_key(KeyboardKey.KEY_SPACE)
